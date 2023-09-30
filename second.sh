@@ -33,5 +33,14 @@ sudo apt-get install python3-zipp # for tiktoken
 sudo apt-get install python3-dev  # for torch-compile
 
 # ======== Nvtop ======
-sudo apt install nvtop
+# https://github.com/Syllo/nvtop/issues/51#issuecomment-759600674
+sudo apt install libdrm-dev libsystemd-dev
+sudo apt install cmake libncurses5-dev libncursesw5-dev git
+git clone https://github.com/Syllo/nvtop.git
+mkdir -p nvtop/build && cd nvtop/build
+cmake .. -DNVIDIA_SUPPORT=ON -DAMDGPU_SUPPORT=ON -DINTEL_SUPPORT=ON
+make
+sudo make install
+
+cd ~
 
