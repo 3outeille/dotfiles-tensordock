@@ -8,6 +8,9 @@ git config --global user.email "ferdinand.mom@epita.fr"
 git config --global user.name "Ferdinand Mom"
 
 # ========== Bash ==========
+# ls autocomplete
+echo "bind 'set show-all-if-ambiguous on'" >> ~/.bashrc
+echo "bind 'TAB:menu-complete'" >> ~/.bashrc
 
 # Fuzzer
 echo "# Fuzzer" >>  ~/.bashrc
