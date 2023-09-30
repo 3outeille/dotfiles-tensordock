@@ -7,7 +7,13 @@ ssh-add ~/.ssh/id_ed25519
 git config --global user.email "ferdinand.mom@epita.fr"
 git config --global user.name "Ferdinand Mom"
 
-# ========== ZSH ==========
-sudo apt install zsh
-# install oh-my-zsh
-sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+# ========== Bash ==========
+
+# Fuzzer
+echo "# Fuzzer" >>  ~/.bashrc
+echo "[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh" >> ~/.bashrc
+
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+echo "command -v pyenv >/dev/null || export PATH=\"$PYENV_ROOT/bin:$PATH\"" >> ~/.bashrc
+echo "eval \"$(pyenv init -)\"" >> ~/.bashrc
