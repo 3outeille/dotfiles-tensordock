@@ -21,7 +21,9 @@ sudo apt-get install python3-dev  # for torch-compile
 # ======== Nvtop ======
 # https://github.com/Syllo/nvtop/issues/51#issuecomment-759600674
 sudo apt install libdrm-dev libsystemd-dev
-sudo apt install cmake libncurses5-dev libncursesw5-dev git
+sudo snap install cmake --classic
+sudo ln -s /snap/bin/cmake /usr/bin/cmake
+sudo apt install libncurses5-dev libncursesw5-dev git
 git clone https://github.com/Syllo/nvtop.git
 mkdir -p nvtop/build && cd nvtop/build
 cmake .. -DNVIDIA_SUPPORT=ON -DAMDGPU_SUPPORT=ON -DINTEL_SUPPORT=ON
