@@ -6,6 +6,7 @@ ssh-add ~/.ssh/id_ed25519
 
 git config --global user.email "ferdinand.mom@epita.fr"
 git config --global user.name "Ferdinand Mom"
+git config --global core.editor "code --wait"
 
 # ========== Bash ==========
 # ls autocomplete
