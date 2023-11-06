@@ -31,3 +31,4 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 [[ -o interactive ]] && source $HOME/.expman/expman.zsh
+[[ -o interactive ]] && source $HOME/.expman/expman.zsh
