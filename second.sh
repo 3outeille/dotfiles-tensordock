@@ -45,3 +45,6 @@ cd ~
 # ====== Expman =========
 git clone https://github.com/megvii-research/expman $HOME/.expman
 echo '[[ -o interactive ]] && source $HOME/.expman/expman.zsh' >> ~/.zshrc
+
+# ======= vscode extension ==========
+ln -s $HOME/dotfiles-tensordock/config/vscode-server/extensions $HOME/.vscode-server/extensions
