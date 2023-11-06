@@ -1,8 +1,8 @@
 # ========== ssh ==========
 
-yes | ssh-keygen -t ed25519 -C "ferdinand.mom@epita.fr"
+ssh-keygen -t ed25519 -C "ferdinand.mom@epita.fr"
 eval "$(ssh-agent -s)"
-yes | ssh-add ~/.ssh/id_ed25519
+ssh-add ~/.ssh/id_ed25519
 
 git config --global user.email "ferdinand.mom@epita.fr"
 git config --global user.name "Ferdinand Mom"
