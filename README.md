@@ -6,3 +6,4 @@
   > - Should be use from local server ! (for sending and receving from ssh)
    > - **For large files: https://serverfault.com/questions/1103253/how-to-have-rsync-split-files-into-smaller-bits-and-combine-them-upon-finishing**
    > - ask chatgpt the difference between `--append-verify` and  `--inplace`
+  - **AUTOMATATE RSYNC + IMAGE VIEWER (you can't port forward with Jean Zay):** https://github.com/jean-zay-users/jean-zay-doc/issues/25
